@@ -1,0 +1,31 @@
+import random #importing random and time
+import time
+def temperature(t):
+        print(t)
+        if (t > 70.0):
+            print("Alarm detected temperature value",t)
+            time.sleep(0.75) #for slow run of code
+        elif(t >50.0):
+            print("Normal temperature value",t)
+            time.sleep(0.75)
+        else:
+            print("safe  temperature value",t)
+            time.sleep(0.75)
+            
+def hum(h):
+    print(h)
+    if(h >20.0):
+        print("Alarm detected humidity value",h)
+        time.sleep(0.75)
+    elif(h >10.0):
+        print("Normal humidity value",h)
+        time.sleep(0.75)
+    else:
+        print("safe humidity value",h)
+        time.sleep(0.75)
+
+
+while(1):
+    temperature(t= (random.random())*100)
+    hum(h=(random.random())*100)
+    
